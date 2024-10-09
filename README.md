@@ -18,7 +18,7 @@ Para fazer uma doação em agradecimento pelo projeto! Acesse: [https://roxcheck
 ![Matrix Hacker Slots](front_example.jpg)
 
 ### Deploy
-Aplicação em produção [https://candycrushdasorte.com/](https://candycrushdasorte.com/)
+Aplicação em produção [https://daanrox.github.io/Matrix-Hack-Slots/](https://daanrox.github.io/Matrix-Hack-Slots/)
 
 
 
