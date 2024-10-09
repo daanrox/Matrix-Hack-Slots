@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix RoxGames</title>
+    <meta name="author" content="Daanrox">
+    <meta name="description" content="Site oficial de Daanrox. Explore meus projetos, blog, e muito mais!">
+    <meta name="keywords" content="Daanrox, desenvolvimento, projetos, daanrox.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Daanrox Sistemas">
+    <meta property="og:description" content="Confira meus projetos e conteúdos no site oficial de Daanrox.">
+    <meta property="og:image" content="https://www.daanrox.com/images/og-image.jpg">
+    <meta property="og:url" content="https://www.daanrox.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Daanrox">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daanrox Sistemas">
+    <meta name="twitter:description" content="Confira meus projetos e conteúdos no site oficial de Daanrox.">
+    <meta name="twitter:image" content="https://www.daanrox.com/images/twitter-image.jpg">
+    <meta name="twitter:site" content="@Daanrox">
+    <meta name="theme-color" content="#0d6efd">
+    <meta name="application-name" content="Daanrox Official Site">
+    <link rel="canonical" href="https://www.daanrox.com">
+    <link href="css/tailwind.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body
+    class="bg-black text-white min-h-screen flex flex-col items-center justify-start p-4 relative overflow-auto flex flex-col items-center justify-center">
+    <div id="matrix-background" class="fixed inset-0 overflow-hidden pointer-events-none"></div>
+
+    <audio id="backgroundAudio" loop="">
+        <source src="/placeholder.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="initialScreen" class="text-center z-10">
+        <h1 class="text-2xl mb-8">
+            Clique para <span class="custom-text-green">Gerar</span> seu código
+        </h1>
+        <button id="generateButton"
+            class="custom-bg-green hover:bg-green-600 text-black font-bold py-2 px-6 rounded-full text-lg">
+            Gerar Código
+        </button>
+    </div>
+
+    <div id="generatingScreen" class="text-center z-10 hidden">
+        <div id="generatingCode" class="custom-text-green text-4xl font-mono mb-4 h-12"></div>
+        <div class="w-64 h-4 bg-gray-700 rounded-full overflow-hidden mb-4">
+            <div id="progressBar" class="h-full custom-bg-green transition-all duration-100 ease-out" style="width: 0%">
+            </div>
+        </div>
+        <p id="progressText" class="mt-2 font-mono text-sm">
+            Hackeando sistema: 0%
+        </p>
+        <div class="mt-4 font-mono text-xs custom-text-green h-20 overflow-hidden">
+            <p class="animate-slide-up">&gt; Acessando mainframe...</p>
+            <p class="animate-slide-up">&gt; Decodificando firewall...</p>
+            <p class="animate-slide-up">&gt; Bypassando segurança...</p>
+            <p class="animate-slide-up">&gt; Extraindo dados...</p>
+            <p class="animate-slide-up">&gt; Gerando código...</p>
+        </div>
+    </div>
+
+    <div class="custom-border-wrapper">
+        <div id="depositOptions"
+            class="rounded-lg w-full max-w-md bg-black border custom-border-green relative z-10 hidden sm:w-full md:max-w-2xl lg:max-w-4xl">
+            <div class="text-center text-xl font-bold custom-text-green mb-4">
+                ESCOLHA O VALOR DO SEU DEPÓSITO
+            </div>
+            <div id="optionsContainer" class="space-y-4 grid grid-cols-1 gap-4">
+            </div>
+        </div>
+
+        <button id="accessRoxgames"
+            class="mt-6 custom-bg-green hover:bg-green-600 text-black font-bold py-3 px-6 rounded-full custom-text-xs flex items-center hidden justify-center mx-auto">
+            ACESSAR ROXGAMES
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+
+        <div id="notifications" class="fixed bottom-4 left-4 z-50"></div>
+        <script src="js/script.js"></script>
+
+    </div>
+
+    <footer>
+        <div class="w-full flex justify-center items-center fixed bottom-4 left-0 text-gray-500">
+            <p>Desenvolvido por <a href="https://daanrox.com">Daanrox</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
